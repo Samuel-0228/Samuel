@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { portfolioData } from '../data';
 import { SectionWrapper } from './SectionWrapper';
@@ -11,13 +10,13 @@ export const Projects: React.FC = () => {
           <div key={i} className="group relative glass rounded-2xl overflow-hidden hover:border-neon-blue/40 transition-all duration-500">
             {/* Project Image */}
             <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                src={project.image} 
+              <img
+                src={project.image}
                 alt={project.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100"
               />
             </div>
-            
+
             {/* Project Content */}
             <div className="p-8 space-y-4">
               <h3 className="text-2xl font-heading font-bold text-white group-hover:text-neon-blue transition-colors">
@@ -26,11 +25,11 @@ export const Projects: React.FC = () => {
               <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 font-sans">
                 {project.description}
               </p>
-              
+
               <div className="pt-4">
-                <a 
-                  href={project.link} 
-                  target="_blank" 
+                <a
+                  href={project.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white font-heading text-xs tracking-widest uppercase group/link"
                 >
@@ -41,7 +40,7 @@ export const Projects: React.FC = () => {
                 </a>
               </div>
             </div>
-            
+
             {/* Glow effect on hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
           </div>
