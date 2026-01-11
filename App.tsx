@@ -15,9 +15,9 @@ const App: React.FC = () => {
       <div className="fixed inset-0 pointer-events-none opacity-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,242,255,0.05),transparent_70%)]"></div>
       </div>
-      
+
       <Navbar />
-      
+
       <main>
         <Hero />
         <About />
