@@ -4,11 +4,11 @@ import { portfolioData } from '../data';
 import { SectionWrapper } from './SectionWrapper';
 
 export const Skills: React.FC = () => {
-  // Categorize skills based on content keywords
+
   const categories = [
     {
       title: "AI & Data Science",
-      skills: portfolioData.skills.filter(s => 
+      skills: portfolioData.skills.filter(s =>
         ['Python', 'Data Analysis', 'Machine Learning', 'AI Chatbots'].includes(s)
       ),
       icon: (
@@ -19,7 +19,7 @@ export const Skills: React.FC = () => {
     },
     {
       title: "Design & Web",
-      skills: portfolioData.skills.filter(s => 
+      skills: portfolioData.skills.filter(s =>
         ['HTML/CSS', 'JavaScript', 'UI/UX Design', 'Graphics & Aesthetics'].includes(s)
       ),
       icon: (
@@ -41,11 +41,11 @@ export const Skills: React.FC = () => {
               </div>
               <h3 className="text-xl font-heading font-bold text-white uppercase tracking-wider">{cat.title}</h3>
             </div>
-            
+
             <div className="flex flex-wrap gap-3">
               {cat.skills.map((skill, j) => (
-                <div 
-                  key={j} 
+                <div
+                  key={j}
                   className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300 hover:text-white hover:border-neon-blue/50 hover:bg-neon-blue/5 transition-all duration-300 cursor-default font-sans text-sm md:text-base"
                 >
                   {skill}
